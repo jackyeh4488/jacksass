@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    @@include('./layout/style.html', {
+        title : '產品頁'
+
+    })
+  </head>
+  <body>
+    <div class="wrapper product">
+      @@include('./layout/login.html')  
+      <!-- header -->
+      @@include('./layout/header.html', {
+        product : 'active'
+     })
+      <!-- header end -->
+      <div class="wrapper product">
+        <h1>產品頁</h1>
+        <div class="row">
+            <div class="col-4">選項</div>
+            <div class="col-8">內容</div>
+
+        </div>
+      </div>
+      @@include('./layout/footer.html')
+    </div>
+
+    <!-- <script src="./dist/main.js"></script> -->
+  </body>
+</html>
